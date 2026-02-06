@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quizzim</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="site/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="site/css/styles.css" />
+	<script src="site/js/jquery.min.js"></script>
+	<script src="site/js/scripts.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div id="quiz-name" class="hidden">...</div>
+		<div id="header-quiz-select" class="bold hidden">Quiz auswählen</div>
+		<div id="header-quiz-play" class="hidden">
+			<div>
+				<span id="question-no">Frage ... / ...</span>
+			</div>
+			<div>
+				<img src="site/img/correct.svg" class="icon" /> <span class="quiz-correct">...</span>
+				<span class="vertical-line"></span>
+				<img src="site/img/incorrect.svg" class="icon" /> <span class="quiz-incorrect">...</span>
+			</div>
+		</div>
+		<div id="header-quiz-end" class="bold hidden">Auswertung</div>
+	</div>
+	<div class="main">
+		<div id="main-quiz-select" class="hidden"></div>
+		<div id="main-quiz-play" class="hidden">
+			<p id="question" class="bottom"></p>
+			<div id="input-text" class="hidden">
+				<input type="text" placeholder="..." maxlength="100" id="input-x" disabled />
+			</div>
+			<div id="input-choice">
+				<table>
+					<tr>
+						<td class="choice" id="input-a">
+							<span class="a">A</span><span>...</span>
+						</td>
+						<td class="choice" id="input-b">
+							<span class="b">B</span><span>...</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="choice" id="input-c">
+							<span class="c">C</span><span>...</span>
+						</td>
+						<td class="choice" id="input-d">
+							<span class="d">D</span><span>...</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="choice" id="input-e">
+							<span class="e">E</span><span>...</span>
+						</td>
+						<td class="choice" id="input-f">
+							<span class="f">F</span><span>...</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="main-quiz-end" class="hidden">
+			<img src="site/img/correct.svg" class="icon big" /> <span class="quiz-correct">...</span>
+			<span class="vertical-line big"></span>
+			<img src="site/img/incorrect.svg" class="icon big" /> <span class="quiz-incorrect">...</span>
+			
+			<p class="normal">
+				<span id="comment"></span>
+				<span class="break"></span>
+				<a id="replay-quiz">» Quiz wiederholen</a>
+				<span class="vertical-line"></span>
+				<a id="select-quiz">» Quiz auswählen</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

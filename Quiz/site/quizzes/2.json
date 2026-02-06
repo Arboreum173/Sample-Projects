@@ -1,0 +1,36 @@
+{
+	"quiz-id": 2,
+	"quiz-name": "Gothic Words",
+	"quiz-type": 2,
+	"questions": [
+		{ "question": "jah", "answer": "and" },
+		{ "question": "ƕaiwa", "answer": "how" },
+		{ "question": "du", "answer": "to" },
+		{ "question": "miþ", "answer": "with" },
+		{ "question": "qaþ", "answer": "said" },
+		{ "question": "ik", "answer": "I" },
+		{ "question": "þu", "answer": "you" },
+		{ "question": "is", "answer": "he" },
+		{ "question": "ita", "answer": "it" },
+		{ "question": "weis", "answer": "we" },
+		{ "question": "wit", "answer": "we" },
+		{ "question": "jus", "answer": "you" },
+		{ "question": "jut", "answer": "you" },
+		{ "question": "eis", "answer": "they" },
+		
+		{ "question": "and", "answer": "jah" },
+		{ "question": "how", "answer": "ƕaiwa" },
+		{ "question": "to", "answer": "du" },
+		{ "question": "with", "answer": "miþ" },
+		{ "question": "said", "answer": "qaþ" },
+		{ "question": "I", "answer": "ik" },
+		{ "question": "you (singular)", "answer": "þu" },
+		{ "question": "he", "answer": "is" },
+		{ "question": "it", "answer": "ita" },
+		{ "question": "we (normal)", "answer": "weis" },
+		{ "question": "we (dual)", "answer": "wit" },
+		{ "question": "you (plural)", "answer": "jus" },
+		{ "question": "you (dual)", "answer": "jut" },
+		{ "question": "they", "answer": "eis" }
+	]
+}

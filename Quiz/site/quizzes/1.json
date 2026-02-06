@@ -1,0 +1,147 @@
+{
+	"quiz-id": 1,
+	"quiz-name": "Chemie-Quiz",
+	"quiz-type": 2,
+	"questions": [
+		{
+			"question": "Wie viele Elektronen hat Selen?",
+			"answer": "34"
+		},
+		{
+			"question": "Wofür steht das Elementsymbol [B]?",
+			"answer": "Bor"
+		},
+		{
+			"question": "Wie viele Neutronen hat Phosphor?",
+			"answer": "16"
+		},
+		{
+			"question": "Welches Element hat 16 Neutronen?",
+			"choices": {
+				"a": "Kohlenstoff",
+				"b": "Aluminium",
+				"c": "Krypton",
+				"d": "Schwefel"
+			},
+			"answer": "d"
+		},
+		{
+			"question": "Wofür steht das Elementsymbol [Ar]?",
+			"choices": {
+				"a": "Arsen",
+				"b": "Argon",
+				"c": "Asen",
+				"d": "Arsium"
+			},
+			"answer": "b"
+		},
+		{
+			"question": "Welches Element ist kein Edelgas?",
+			"choices": {
+				"a": "Neon",
+				"b": "Helium",
+				"c": "Xenon",
+				"d": "Stickstoff"
+			},
+			"answer": "d"
+		},
+		{
+			"question": "Wofür steht das Elementsymbol [Si]?",
+			"choices": {
+				"a": "Silen",
+				"b": "Selen",
+				"c": "Silium",
+				"d": "Silicium"
+			},
+			"answer": "d"
+		},
+		{
+			"question": "Welches Element existiert im Periodensystem nicht?",
+			"choices": {
+				"a": "Gold",
+				"b": "Silber",
+				"c": "Bronze",
+				"d": "Eisen"
+			},
+			"answer": "c"
+		},
+		{
+			"question": "Was ist das Elementsymbol von Metall?",
+			"choices": {
+				"a": "M",
+				"b": "Me",
+				"c": "Mt",
+				"d": "Es ist kein Element an sich; es ist eine Gruppe chemischer Elemente."
+			},
+			"answer": "d"
+		},
+		{
+			"question": "Wie viele Neutronen hat Wasserstoff?",
+			"choices": {
+				"a": "keine",
+				"b": "1",
+				"c": "2",
+				"d": "8"
+			},
+			"answer": "a"
+		},
+		{
+			"question": "Wie viele Außenelektronen hat Helium?",
+			"answer": "2"
+		},
+		{
+			"question": "Wofür steht das Elementsymbol [N]?",
+			"choices": {
+				"a": "Natrium",
+				"b": "Stickstoff",
+				"c": "Neon",
+				"d": "Ozon"
+			},
+			"answer": "b"
+		},
+		{
+			"question": "Wie viele Neutronen hat Brom?",
+			"answer": "45"
+		},
+		{
+			"question": "Welches Element hat eine Atommasse von 19?",
+			"answer": "Fluor"
+		},
+		{
+			"question": "Wie viele Protonen hat Kalium?",
+			"answer": "19"
+		},
+		{
+			"question": "Wie viele Schalen hat Helium?",
+			"choices": {
+				"a": "2",
+				"b": "8",
+				"c": "1",
+				"d": "4"
+			},
+			"answer": "c"
+		},
+		{
+			"question": "Wofür steht das Elementsymbol [C]?",
+			"choices": {
+				"a": "Calcium",
+				"b": "Kohlenstoff",
+				"c": "Chlor",
+				"d": "Kalium"
+			},
+			"answer": "b"
+		},
+		{
+			"question": "Wie viele Außenelektronen hat Gallium?",
+			"answer": "3"
+		},
+		{
+			"question": "Wie viele Außenelektronen hat Neon?",
+			"answer": "8"
+		},
+		{
+			"question": "Wie viele Schalen hat Schwefel?",
+			"answer": "3"
+		}
+	]
+}
