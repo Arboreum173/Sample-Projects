@@ -1,0 +1,300 @@
+<html>
+<head>
+	<title>Test</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/script.js" charset="UTF-8"></script>
+</head>
+<body>
+	<!-- NOTE: USE SECTION TAGS INSTEAD OF DIV TAGS! -->
+	<!-- NAVIGATION -->
+	<div class="navigation">
+		<a href="index.html">
+			<div class="logo">
+				<img src="img/svg/logo_mitquadrat.svg" alt="Logo der Getreidemühle Schrot und Korn" title="Das Logo der Getreidemühle Schrot und Korn ist schwarz und hat einen weißen Hintergrund. Auf der linken Seite befindet sich ein abstrahierter Mühlenstein mit einer Ähre und auf der rechten Seite die Worte Schrot und Korn in einer geometrischen Schrift mit Serifen." />
+			</div>
+		</a>
+		<div class="burgermenu">
+			<img src="img/svg/burgermenu.svg" alt="Bürgermenü" />
+		</div>
+		<div class="main">
+			<a href="#home"><div>Home</div></a>
+			<a href="#backen"><div>Backen</div></a>
+			<a href="#anmeldung"><div>Anmeldung</div></a>
+			<a href="#rezepte"><div>Rezepte</div></a>
+			<a href="#mehl"><div>Mehl</div></a>
+			<a href="#kontakt"><div>Kontakt</div></a>
+		</div>
+	</div>
+	<!-- HOME -->
+	<div class="section" id="home">
+		<h4>Getreidemühle Korn und Schrot präsentiert</h4>
+		<div id="flocken">
+			<!--<div class="flocke1"><img src="img/svg/flocke.svg" alt=""></div>
+			<div class="flocke2"><img src="img/svg/flocke.svg" alt=""></div>
+			<div class="flocke3"><img src="img/svg/flocke.svg" alt=""></div>
+			<div class="flocke4"><img src="img/svg/flocke.svg" alt=""></div>
+			<div class="flocke5"><img src="img/svg/flocke.svg" alt=""></div>-->
+		</div>
+		<div class="header"><h1>Die Mühlen&shy;bäcker</h1><hr /></div>
+		<h4 id="subtitle">4× in diesem Herbst<br />jeweils ab 14.30 Uhr<br />in unserer hauseigenen<br />Mühlenbäckerei</h4>
+		<div id="muehle-1">
+			<img src="img/svg/muehle.svg" /><img src="img/svg/muehle_rad.svg" />
+		</div>
+		<div id="mehlsack">
+			<img src="img/svg/mehlsack.svg" alt="" />
+		</div>
+		<div id="pfeil">
+			<picture>
+				<source media="(max-width: 1230px)" srcset="img/svg/pfeil.svg" />
+				<source srcset="img/svg/pfeil_flach.svg" />
+				<img src="img/svg/pfeil_flach.svg" alt="" />
+			</picture>
+		</div>
+	</div>
+	<!-- BACKEN -->
+	<div class="section" id="backen">
+		<div class="header"><h2>Worauf Sie sich<br />freuen können</h2><hr /></div>
+		<p>
+			Gemeinsam zubereitete schmack&shy;hafte Semmeln und Gebäck mit frischen Zutaten aus unserer eigenen Mühle – ökologisch, regional und erschwing&shy;lich. Sie erleben Spaß und Genuss beim gemein&shy;samen Backen und Schlemmen. Lassen Sie sich über&shy;raschen, welche*r Bäcker&shy;meister*in bei Ihrer Mühlen&shy;bäckerei die Anleitung übernimmt!
+			<span class="break"></span>
+			Außerdem eröffnen Sie sich eine große Chance: Alle Teil&shy;nehmer*innen der Mühlen&shy;bäckerei können unsere Mehl&shy;sorten in einem <a href="#mehl">Spezial-Angebot</a> bestellen. Eingeladen zur Mühlen&shy;bäckerei sind: junge und jung&shy;gebliebene ernährungs&shy;bewusste Hobby&shy;bäcker*innen aus unserer Region Straubing.
+		</p>
+		<div id="semmel"><img src="img/svg/semmel.svg" alt="" /></div>
+		<div id="kuchen"><img src="img/svg/kuchen.svg" alt="" /></div>
+		<div id="croissant"><img src="img/svg/croissant.svg" alt="" /></div>
+	</div>
+	<div class="section" id="anmeldung">
+		<div class="header"><h2>Anmeldung</h2><hr /></div>
+		<div class="form">
+			<div class="eyecatcher">Kostenbeitrag:<br />EUR 20,–<br />Anmeldeschluss:<br />1. Oktober</div>
+			<div>
+				<input type="text" id="input-vorname" placeholder="Vorname*, z. B. Susanne" />
+				<input type="text" id="input-nachname" placeholder="Nachname*, z. B. Miller" />
+			</div>
+			<div>
+				<input type="text" id="input-strasse" placeholder="Straße und Hausnummer*, z. B. Schanzlweg 37" />
+			</div>
+			<div>
+				<input type="text" id="input-plz" placeholder="Postleitzahl*, z. B. 94315" />
+				<input type="text" id="input-plz" placeholder="Ort*, z. B. Straubing" />
+			</div>
+			<div>
+				<input type="text" id="input-email" placeholder="E-Mail*, z. B. muehlenbaecker@kornundschrot.de" />
+				<input type="text" id="input-tel" placeholder="Telefon-Nr.*, z. B. 09421 12340" />
+			</div>
+			<div>
+				<select>
+					<option selected disabled>Lieblingstermin*</option>
+					<option value="1">Freitag, 25. Oktober 2019</option>
+					<option value="2">Samstag, 26. Oktober 2019</option>
+					<option value="3">Freitag, 1. November 2019</option>
+					<option value="4">Samstag, 2. November 2019</option>
+				</select>
+				<select>
+					<option selected disabled>Ersatztermin</option>
+					<option value="1">Freitag, 25. Oktober 2019</option>
+					<option value="2">Samstag, 26. Oktober 2019</option>
+					<option value="3">Freitag, 1. November 2019</option>
+					<option value="4">Samstag, 2. November 2019</option>
+				</select>
+			</div>
+			<div class="pflichtfelder">* Pflichtfelder</div>
+			<div class="control">
+				<button id="zuruecksetzen-1">Zurücksetzen</button>
+				<button id="absenden-1">Absenden</button>
+			</div>
+		</div>
+	</div>
+	<!-- REZEPTE -->
+	<div class="section" id="rezepte">
+		<div class="header"><h2>Rezepte zum „Aufwärmen“</h2><hr /></div>
+		<div class="swiper">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<span>Weizen–Dinkel–Semmeln</span>
+						<img src="img/rezepte/semmeln.jpg" />
+					</div>
+					<div class="swiper-slide">
+						<span>Sesamkugeln</span>
+						<img src="img/rezepte/sesamkugeln.jpg" />
+					</div>
+					<div class="swiper-slide">
+						<span>Käsegebäck</span>
+						<img src="img/rezepte/kaesegebaeck.jpg" />
+					</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<button class="toggle">Rezept anzeigen</button>
+			</div>
+			<div class="text" id="rezept-1">
+				<table>
+					<tr><td>250&nbsp;g</td><td>Weizen&shy;voll&shy;korn&shy;mehl</td></tr>
+					<tr><td>250&nbsp;g</td><td>Dinkel&shy;voll&shy;korn&shy;mehl</td></tr>
+					<tr><td>5&nbsp;g</td><td>Zucker</td></tr>
+					<tr><td>5&nbsp;g</td><td>Butter</td></tr>
+					<tr><td>10&nbsp;g</td><td>Salz</td></tr>
+					<tr><td>1&nbsp;Päckchen</td><td>Trocken&shy;hefe</td></tr>
+					<tr><td>300&nbsp;ml</td><td>warmes Wasser</td></tr>
+				</table>
+				<p>
+					Alle Zutaten bis auf die Hefe mischen. Die Hefe im warmen Wasser auflösen und dazugeben. Den Teig zwei bis drei Minuten gut durchkneten. Zu einem Ballen formen und 20&nbsp;Minuten bei 25&nbsp;Grad in einer zugedeckten Schüssel aufgehen lassen.
+					<span class="break"></span>
+					Danach zwölf Teile des Teigs zu Semmeln rollen. Auf ein Backblech setzen, abdecken, weitere 30&nbsp;Minuten ruhen lassen.
+					<span class="break"></span>
+					Mit einem scharfen Küchenmesser jede Teigrolle einkerben. Den Backofen auf 230&nbsp;Grad vorheizen.
+					<span class="break"></span>
+					In die Fettpfanne des Backofens gut 200&nbsp;ml heißes Wasser gießen, das Blech mit den Semmeln in den Ofen schieben und 25&nbsp;Minuten backen. (Vor dem Backen kann man die Teigrollen auch mit Sonnenblumen- oder Kürbiskernen, mit Kümmel oder Mohn bestreuen.)
+				</p>
+			</div>
+			<div class="text" id="rezept-2">
+				<table>
+					<tr><td>180&nbsp;g</td><td>Weizen&shy;voll&shy;korn&shy;mehl</td></tr>
+					<tr><td>180&nbsp;g</td><td>Butter</td></tr>
+					<tr><td>120&nbsp;g</td><td>Sesam</td></tr>
+					<tr><td>120&nbsp;g</td><td>Honig</td></tr>
+					<tr><td>etw.</td><td>Zimt, Vanille, Salz, Nelken, Mandeln</td></tr>
+				</table>
+				<p>
+					Sesam rösten, mit Butter und Honig verrühren, die Gewürze und das Mehl hinzufügen. Den Teig etwa eine Stunde kühl stellen. Danach walnussgroße Kugeln formen, in die Mitte eine Mandel drücken und auf dem Backblech etwa zehn Minuten bei 210 Grad auf mittlerer Schiene backen.
+				</p>
+			</div>
+			<div class="text" id="rezept-3">
+				<table>
+					<tr><td>200&nbsp;g</td><td>Emmen&shy;taler (gerieben)</td></tr>
+					<tr><td>200&nbsp;g</td><td>Butter</td></tr>
+					<tr><td>250&nbsp;g</td><td>Weizen&shy;voll&shy;korn&shy;mehl</td></tr>
+					<tr><td>½&nbsp;TL</td><td>Salz</td></tr>
+					<tr><td>2</td><td>Eigelb</td></tr>
+					<tr><td>2&nbsp;TL</td><td>Milch</td></tr>
+					<tr><td>etw.</td><td>Kümmel, Paprika</td></tr>
+				</table>
+				<p>
+					Mehl, Käse und kalte Butterstücke schnell verkneten und eine halbe Stunde kühl stellen. Danach den Teig nach und nach auf einer bemehlten Platte ausrollen und beliebige Formen ausstechen. Eigelb und Milch verrühren, die Teile damit bestreichen, mit Kümmel oder Paprika bestreuen. Bei 180 Grad auf mittlerer Schiene eine gute Viertelstunde backen und auf dem Blech auskühlen lassen.
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- MEHL -->
+	<div class="section" id="mehl">
+		<div class="header"><h3>Unser besonderes Mehlsortiment für Sie</h3><hr /></div>
+		<div class="form">
+			<p class="small">Ich möchte das Spezial-Angebot des Mehlsortiments in Anspruch nehmen:</p>
+			<div>
+				<label class="check">
+					<input type="checkbox" name="mehl" /><span class="checkbox"></span>
+					<span>
+						Mehlsortiment Back ma’s<br />
+						(Dinkeldunst, Weizenvollkorn, Roggen Type 815)
+					</span>
+				</label>
+			</div>
+			<div>
+				<label class="check">
+					<input type="checkbox" name="mehl" /><span class="checkbox"></span>
+					<span>
+						Mehlsortiment Italiano<br />
+						(Tipo 00, Weizen Type 2000, Hanfmehl)
+					</span>
+				</label>
+			</div>
+			<div>
+				<label class="check">
+					<input type="checkbox" name="mehlsorte" /><span class="checkbox"></span>
+					<span>
+						Mehlsortiment Christ Kindl<br />
+						(Weizen Type 550, Roggen Type 610, Hanfmehl)
+					</span>
+				</label>
+			</div>
+			<div>
+				<input type="text" id="input-vorname" placeholder="Vorname*, z. B. Susanne" />
+				<input type="text" id="input-nachname" placeholder="Nachname*, z. B. Miller" />
+			</div>
+			<div>
+				<input type="text" id="input-strasse" placeholder="Straße und Hausnummer*, z. B. Schanzlweg 37" />
+			</div>
+			<div>
+				<input type="text" id="input-plz" placeholder="Postleitzahl*, z. B. 94315" />
+				<input type="text" id="input-plz" placeholder="Ort*, z. B. Straubing" />
+			</div>
+			<div>
+				<input type="text" id="input-email" placeholder="E-Mail*, z. B. muehlenbaecker@kornundschrot.de" />
+				<input type="text" id="input-tel" placeholder="Telefon-Nr.*, z. B. 09421 12340" />
+			</div>
+			<div>
+				<label class="check">
+					<input type="checkbox" name="entscheidung" /><span class="checkbox"></span>
+					<span>
+						Ich will mich erst bei der Mühlenbäckerei entscheiden, ob ich das Spezial-Angebot in Anspruch nehme.
+					</span>
+				</label>
+			</div>
+			<p class="small">Falls abweichende Rechnungsadresse:</p>
+			<textarea placeholder="Geben Sie hier ihre Rechnungsadresse ein, falls sie von der Lieferadresse abweichend ist." name="rechnungsaddresse"></textarea>
+			<div class="pflichtfelder">* Pflichtfelder</div>
+			<div class="control">
+				<button id="zuruecksetzen-2">Zurücksetzen</button>
+				<button id="absenden-2">Absenden</button>
+			</div>
+		</div>
+	</div>
+	<!-- KONTAKT -->
+	<div class="section" id="kontakt">
+		<div class="header"><h2>Kontakt</h2><hr /></div>
+		<div id="muehle-2">
+			<img src="img/svg/muehle.svg" /><img src="img/svg/muehle_rad.svg" />
+		</div>
+		<p class="center">
+			Kontakt und Info-Telefon:<br />
+			Stefan Miller<br />
+			muehlenbaecker@kornundschrot.de<br />
+			Tel: 09421/12340
+		</p>
+		<div id="stefan"><img src="img/svg/stefan.svg" /></div>
+		<div id="bis-bald"><img src="img/svg/bis_bald.svg" /></div>
+	</div>
+	<!-- IMPRESSUM -->
+	<div class="section" id="impressum">
+		<div class="social">
+			<a href="www.snapchat.com"><img src="img/social/snapchat.svg" alt="Link zur Snapchat Seite von Korn und Schrot" class="social-icon" /></a>
+			<a href="www.pinterest.de"><img src="img/social/pinterest.svg" alt="Link zur Pinterest Seite von Korn und Schrot" class="social-icon"></a>
+			<a href="www.instagram.com"><img src="img/social/instagram.svg" alt="Link zur Instagram Seite von Korn und Schrot" class="social-icon"></a>
+		</div>
+		<h2>Impressum</h2>
+		<div class="spalten">
+			<div>
+				Getreidemühle<br />
+				Korn und Schrot e.K.<br />
+				Susanne Miller<br />
+				Schanzlweg 37<br />
+				94315 Straubing
+			</div>
+			<div>
+				Tel: 09421/12340<br />
+				Fax: 09421/12344<br />
+				<br />
+				www.kornundschrot.de<br />
+				kontakt@kornundschrot.de
+			</div>
+			<div>
+				Amtsgericht Straubing/<br />
+				Registersachen,<br />
+				XXX020101,<br />
+				Umsatzsteuer ID: DE787654
+			</div>
+		</div>
+		<p class="small center"><a class="underline" id="datenschutz-toggle">Datenschutz</a></p>
+		<p id="datenschutz">
+			Datenschutzhinweise gemäß EU-Datenschutz-Grundverordnung (DSGVO)
+			Wir setzen die seit dem 25. Mai 2018 geltende EU-Datenschutz-Grundverordnung (DSGVO) um, insbesondere, wenn es um die Verarbeitung Ihrer personenbezogenen Daten durch uns sowie um die Ihnen dabei zustehenden Rechte geht. Die Hinweise werden soweit erforderlich aktualisiert und sind im Detail nachlesbar unter: <a href="http://www.kornundschrot.de/datenschutz.php">http://www.kornundschrot.de/datenschutz.php</a>.
+		</p>
+	</div>
+</body>
+</html>

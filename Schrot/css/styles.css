@@ -1,0 +1,953 @@
+/*--------------------*/
+/*----== FONTS ==-----*/
+/*--------------------*/
+@font-face {
+	font-family: "Josefin Bold";
+	src: url("../fonts/JosefinSlab-Bold.woff2") format("woff2"),
+		 url("../fonts/JosefinSlab-Bold.woff") format("woff"),
+		 url("../fonts/JosefinSlab-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Regular.woff2") format("woff2"),
+		 url("../fonts/Lato-Regular.woff") format("woff"),
+		 url("../fonts/Lato-Regular.ttf") format("truetype");
+}
+
+::-moz-selection {
+	background: rgba(107, 89, 80, 0.25);
+}
+
+::selection {
+	background: rgba(107, 89, 80, 0.25);
+}
+
+/*------------------------*/
+/*----== ALLGEMEIN ==-----*/
+/*------------------------*/
+/* -- BROWSER STYLES ZURUECKSETZEN -- */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow-x: hidden;
+	font-size: 14px;
+	font-family: "Lato", sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, hr {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* -- HTML & BODY -- */
+html, body {
+	height: 100%;
+}
+
+body {
+	background: url("../img/landing_neu.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 70px;
+}
+
+/* -- FONTS -- */
+h1,
+h2,
+h3,
+h4,
+h5,
+.btn-absenden,
+.btn-absenden2,
+.btn-zurueck,
+.btn-zurueck2,
+#spezialangebot {
+	font-family: "Josefin Bold", sans-serif;
+}
+
+p {
+	font-family: "Lato", sans-serif;
+	margin: 2em auto;
+}
+
+p.small {
+	margin-bottom: 8px;
+}
+
+p.center {
+	text-align: center;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+	flex: 1;
+	min-width: 50px;
+	margin: 5px;
+	padding: 10px 14px;
+    border: 0;
+    border-radius: 2px;
+	font-family: "Lato", sans-serif;
+	font-size: 1.15em;
+	outline-color: rgba(107, 89, 80, 0.25);
+}
+
+select, button {
+	font-family: "Josefin Bold", sans-serif;
+	font-size: 1.2em;
+}
+
+textarea {
+	flex: unset;
+	width: 100%;
+	height: 150px;
+	resize: none;
+}
+
+button {
+	flex: unset;
+	margin: 5px;
+	width: 150px;
+	padding: 10px 24px;
+    border: 0;
+    border-radius: 16px;
+	background-color: #6B5950;
+	color: white;
+	font-family: "Josefin Bold", sans-serif;
+	outline-color: rgba(107, 89, 80, 0.25);
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+	outline: none;
+}
+
+button:hover {
+	background-color: #F9F4F1;
+	color: #6B5950;
+}
+
+/* -- HEADERS & PARAGRAPHS -- */
+h1, h2, h3, h4, h5 {
+	text-align: center;
+}
+
+h1, h2, h3, h4, hr {
+	transform: rotate(355deg);
+}
+
+h1 { margin-top: 25px; }
+h2 { margin-top: 30px; }
+h3 { margin-top: 45px; }
+h4 { margin-top: 55px; }
+
+span.break {
+	display: block;
+	margin-top: 7px;
+}
+
+/* -- SCHRIFTGROESSEN -- */
+h1 { font-size: 7em; }
+h2 { font-size: 4em; line-height: 1.1em; }
+h3 { font-size: 2.8em; line-height: 1.1em; }
+h4 { font-size: 1.5em; line-height: 1.1em; }
+h5 { font-size: 1.2em; line-height: 1.1em; }
+p {
+	width: 95%;
+	max-width: 600px;
+	font-size: 1.15em;
+	line-height: 1.5em;
+	word-break: break-word;
+}
+.btn-absenden, .btn-absenden2, .btn-zurueck, .btn-zurueck2 { font-size: 1em; }
+
+/* -- ALLGEMEIN -- */
+a {
+	color: inherit;
+	font-size: 1.25em;
+	font-family: "Josefin Bold", sans-serif;
+	transition: color 0.3s;
+	cursor: pointer;
+}
+
+a:hover {
+	color: #808080;
+}
+
+a.underline {
+	text-decoration: underline;
+}
+
+hr {
+	width: 100px;
+	height: 4px;
+	background-color: black;
+	border: 0;
+	margin-top: 0.3em;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table th, table td {
+	min-width: 60px;
+	padding: 2px 8px;
+}
+
+.form {
+	position: relative;
+	width: 95%;
+	margin: 3.5em auto 2.5em auto;
+	max-width: 600px;
+}
+
+.form div {
+	display: flex;
+}
+
+.form .control {
+	display: block;
+	padding-top: 1em;
+	text-align: center;
+}
+
+.form .pflichtfelder {
+	padding: 5px 5px 0 12px;
+	text-align: left;
+}
+
+.eyecatcher {
+	position: absolute;
+	top: -80px;
+	right: -80px;
+	height: 170px;
+	width: 170px;
+	padding: 50px 28px;
+	background-image: url("../img/svg/eyecatcher.svg");
+	background-size: cover;
+	font-family: "Josefin Bold", sans-serif;
+	font-size: 1.2em;
+	text-align: center;
+	line-height: 1.2em;
+	transform: rotate(10deg);
+	transform-origin: 50% 50%;
+	animation: eyecatcher 0.8s ease-out infinite;
+	-webkit-animation: eyecatcher 0.8s ease-out infinite;
+}
+
+@keyframes eyecatcher {
+	0% { transform: rotate(10deg); }
+	50% { transform: rotate(13deg); }
+	80% { transform: rotate(11deg); }
+}
+
+.check {
+	display: table;
+	margin: 12px 5px;
+	font-family: "Josefin Bold", sans-serif;
+	font-size: 1.2em;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.check input {
+	display: none;
+}
+
+.check .checkbox {
+	display: table-cell;
+	width: 40px;
+	background-image: url("../img/svg/korn_schwarz.svg");
+	background-size: 100% 100%;
+	vertical-align: middle;
+}
+
+.check input:checked + .checkbox {
+	background-image: url("../img/svg/korn_weiss_checked.svg");
+}
+
+.check span {
+	display: table-cell;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.spalten {
+	display: block;
+	margin: 40px auto;
+	text-align: center;
+	width: 95%;
+	max-width: 800px;
+}
+
+.spalten div {
+	display: inline-block;
+	margin: 0 30px 30px 30px;
+}
+
+.social {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.social-icon {
+	position: relative;
+	top: 0;
+	height: 40px;
+	margin: 0 12px;
+	vertical-align: top;
+	transition: top 0.3s;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.social-icon:hover {
+	position: relative;
+	top: 3px;
+}
+
+/*-------------------------*/
+/*----== NAVIGATION ==-----*/
+/*-------------------------*/
+.navigation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	background-color: white;
+	padding: 0 35px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	z-index: 100;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.navigation .main {
+	margin-top: 35px;
+	float: right;
+}
+
+.navigation .main div {
+	display: inline-block;
+	margin-left: 30px;
+	font-family: "Josefin Bold", sans-serif;
+	color: black;
+	font-size: 1.2em;
+	transition: color 0.3s;
+	-webkit-transition: color 0.3s;
+}
+
+.navigation .main div:hover {
+	color: #808080;
+}
+
+.navigation .logo {
+	float: left;
+	position: relative;
+	z-index: 5;
+}
+
+.navigation .logo img {
+	margin-top: 10px;
+	height: 135%;
+	transition: margin-top 0.3s;
+	filter: drop-shadow(0 6px 3px rgba(0, 0, 0, 0.1));
+}
+
+.navigation .logo:hover img {
+	margin-top: 13px;
+}
+
+.navigation .burgermenu {
+	float: right;
+	display: none;
+	margin: 33px 0 0 30px;
+	cursor: pointer;
+}
+
+.navigation .burgermenu img {
+	width: 30px;
+}
+
+/*---------------------*/
+/*----== SWIPER ==-----*/
+/*---------------------*/
+.swiper {
+	width: 95%;
+	max-width: 600px;
+	margin: 50px auto;
+}
+
+.swiper .swiper-container {
+	width: 100%;
+}
+
+.swiper .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: white;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper .swiper-slide:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(165deg, rgb(74, 63, 51) 0%, rgba(0,0,0,0) 50%);
+}
+
+.swiper .swiper-slide span {
+	position: absolute;
+	top: 50px;
+	left: 40px;
+	max-width: 80%;
+	color: white;
+	font-size: 2.5em;
+	font-family: "Josefin Bold", sans-serif;
+	transform: rotate(355deg);
+}
+
+.swiper .swiper-slide img {
+	width: 100%;
+}
+
+.swiper .swiper-container .toggle {
+	z-index: 10;
+	position: absolute;
+	bottom: 0;
+	right: 30px;
+	border-radius: 16px 16px 0 0;
+	margin: 0;
+	width: 280px;
+	font-size: 1.8em;
+}
+
+.swiper .text {
+	display: none;
+	background-color: white;
+	padding: 30px;
+	border-radius: 0 0 32px 32px;
+}
+
+.swiper .text p {
+	margin-bottom: 0;
+}
+
+/*-----------------------*/
+/*----== SECTIONS ==-----*/
+/*-----------------------*/
+.section {
+	padding: 30px 15px;
+}
+
+.section:nth-child(odd) {
+	position: relative;
+	background-color: #F9F4F1;
+}
+
+.section:nth-child(odd):before {
+	content: "";
+	position: absolute;
+	top: -18px;
+	left: 0;
+	height: 18px;
+	width: 100%;
+	background-image: url("../img/svg/unterlage_rand.svg");
+	background-position: bottom;
+}
+
+.section:nth-child(odd):after {
+	content: "";
+	position: absolute;
+	bottom: -18px;
+	left: 0;
+	height: 18px;
+	width: 100%;
+	background-image: url("../img/svg/unterlage_rand.svg");
+	background-position: bottom;
+	transform: scaleY(-1);
+}
+
+.section:last-child {
+	background-color: #313131;
+	color: white;
+}
+
+#subtitle {
+	transform: rotate(0);
+}
+
+#mehlsack {
+	width: 140px;
+	margin-left: 12%;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#muehle-1 {
+	position: relative;
+	width: 220px;
+	float: right;
+	margin: -12% 10% 0 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#muehle-2 {
+	position: absolute;
+	top: 70px;
+	left: calc(50% - 330px);
+	width: 150px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#muehle-1 img:nth-child(2),
+#muehle-2 img:nth-child(2) {
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform-origin: 51% 39%;
+	animation: rotate 7s linear infinite;
+	-webkit-animation: rotate 7s linear infinite;
+}
+
+@keyframes rotate {
+	0% { transform: rotate(0); }
+	100% { transform: rotate(359deg); }
+}
+
+#pfeil {
+	width: 245px;
+	float: right;
+	margin: -15% 25% 0 0;
+	transform: rotate(13deg);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#semmel {
+	position: absolute;
+	top: 90px;
+	left: calc(50% - 370px);
+	width: 110px;
+	transform-origin: 50% 50%;
+	animation: semmel 1s ease-in-out infinite;
+	-webkit-animation: semmel 1s ease-in-out infinite;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@keyframes semmel {
+	0% { transform: rotate(0); }
+	20% { transform: rotate(-1deg); }
+	50% { transform: rotate(-3deg); }
+	90% { transform: rotate(0); }
+}
+
+#kuchen {
+	position: absolute;
+	top: 50px;
+	right: calc(50% - 370px);
+	width: 80px;
+	transform-origin: 50% 50%;
+	animation: kuchen 3s ease-out infinite;
+	-webkit-animation: kuchen 3s ease-out infinite;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@keyframes kuchen {
+	0% { transform: translateY(0); }
+	50% { transform: translateY(5px); }
+	100% { transform: translateY(0); }
+}
+
+#croissant {
+	position: absolute;
+	bottom: 35px;
+	left: calc(50% - 450px);
+	width: 110px;
+	transform-origin: 50% 50%;
+	animation: croissant 3s ease-out infinite;
+	-webkit-animation: croissant 3s ease-in-out infinite;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@keyframes croissant {
+	0% { transform: rotate(0); }
+	50% { transform: rotate(-5deg); }
+}
+
+#stefan {
+	position: absolute;
+    top: 70px;
+    right: calc(50% - 400px);
+    width: 115px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#bis-bald {
+	position: absolute;
+	top: 145px;
+	right: calc(50% - 300px);
+	width: 100px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#home { padding: 30px 30px 48px 30px; }
+#home hr { width: 25%; height: 6px; }
+#backen hr { width: 150px; }
+#kuchen hr { width: 80px; }
+#impressum h2 { font-size: 3em; }
+#datenschutz { display: none; }
+
+/*----------------------------*/
+/*----== MEDIA QUERIES ==-----*/
+/*----------------------------*/
+@media screen and (max-width: 1230px) {
+	#pfeil {
+		width: 150px;
+		margin: -18% 30% 0 0;
+		transform: rotate(40deg);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	/* -- NAVIGTION -- */
+	.navigation .main {
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 70px;
+		width: 100%;
+		margin-top: 0;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	}
+	
+	.navigation .main div {
+		display: block;
+		margin-left: 0;
+		width: 100%;
+		font-family: "Josefin Bold", sans-serif;
+		text-align: right;
+		color: black;
+		background-color: #F9F4F1;
+		padding: 12px 34px;
+		border-top: 1px solid #F0E3DD;
+		font-size: 1.2em;
+		transition: color 0.3s;
+		-webkit-transition: color 0.3s;
+	}
+	
+	.navigation .main div:hover {
+		color: #808080;
+	}
+	
+	.navigation .burgermenu {
+		display: inline-block;
+	}
+	
+	h1 { font-size: 5em; }
+	h2 { font-size: 3em; }
+	hr { height: 3px; }
+	#home hr { height: 5px; }
+	
+	#mehlsack {
+		width: 125px;
+		margin-left: 12%;
+	}
+	
+	#muehle-1 {
+		margin: -20% 3% 0 0;
+	}
+	
+	#semmel {
+		top: 80px;
+		left: calc(50% - 285px);
+		width: 90px;
+	}
+	
+	#kuchen {
+		top: 22px;
+		right: calc(50% - 290px);
+		width: 70px;
+	}
+	
+	#croissant {
+		display: none;
+	}
+	
+	.swiper .swiper-slide span {
+		font-size: 2.1em;
+	}
+	
+	#stefan {
+		right: calc(50% - 330px);
+		width: 100px;
+	}
+	
+	#bis-bald {
+		right: calc(50% - 240px);
+		width: 85px;
+	}
+	
+	#muehle-2 {
+		top: 80px;
+		left: calc(50% - 300px);
+		width: 130px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	#mehlsack {
+		width: 110px;
+		margin-left: 8%;
+	}
+	
+	#muehle-1 {
+		width: 175px;
+		margin: -20% 3% 0 0;
+	}
+	
+	#pfeil {
+		width: 125px;
+		margin: -21% 32% 0 0;
+	}
+	
+	.eyecatcher {
+		top: -115px;
+		right: -20px;
+		height: 140px;
+		width: 140px;
+		padding: 37px 18px;
+		font-size: 1.1em;
+	}
+	
+	#anmeldung .header {
+		display: inline-block;
+		margin-left: 32%;
+	}
+	
+	#stefan {
+		top: 125px;
+		right: calc(50% - 280px);
+		width: 85px;
+	}
+	
+	#bis-bald {
+		right: calc(50% - 180px);
+		top: 225px;
+		width: 85px;
+	}
+	
+	#muehle-2 {
+		left: calc(50% - 290px);
+	}
+	
+	h3 {
+		font-size: 2.3em;
+	}
+}
+
+@media screen and (max-width: 645px) {
+	#mehlsack {
+		width: 75px;
+		margin: -115px 0 8% 4%;
+	}
+	
+	#muehle-1 {
+		width: 105px;
+		margin: -220px 0% 0 0;
+	}
+	
+	#pfeil {
+		display: none;
+	}
+	
+	#semmel {
+		left: 7%;
+		width: 60px;
+	}
+	
+	#kuchen {
+		top: 50px;
+		right: 7%;
+		width: 45px;
+	}
+	
+	#anmeldung .header {
+		margin-left: 18%;
+	}
+	
+	#stefan {
+		top: 90px;
+		right: calc(50% - 215px);
+		width: 100px;
+	}
+	
+	#bis-bald {
+		display: none;
+	}
+	
+	#muehle-2 {
+		top: 40px;
+		left: calc(50% - 240px);
+	}
+	
+	h3 { font-size: 2.8em; }
+}
+
+@media screen and (max-width: 500px) {
+	/* -- NAVIGTION -- */
+	.navigation .logo img {
+		margin-top: 4px;
+		width: 125px;
+	}
+	
+	.navigation .logo:hover img {
+		margin-top: 7px;
+	}
+	
+	h1 { font-size: 4em; }
+	h2 { font-size: 2.5em; }
+	h3 { font-size: 2.2em; }
+	#home hr { height: 4px; }
+	#anmeldung .header { margin-left: 10%; }
+	
+	#subtitle {
+		margin-top: 35px;
+		font-size: 1.2em;
+	}
+	
+	#mehlsack,
+	#semmel,
+	#kuchen {
+		display: none;
+	}
+	
+	#muehle-1 {
+		width: 90px;
+		margin: -170px 0 0 0;
+	}
+	
+	.form div {
+		display: block;
+	}
+	
+	input[type="text"],
+	input[type="number"],
+	input[type="email"],
+	input[type="tel"],
+	select {
+		width: 100%;
+		margin: 5px 0;
+	}
+	
+	.swiper .swiper-slide span {
+		font-size: 1.6em; top: 30px; left: 20px;
+	}
+	
+	.swiper .swiper-container .toggle {
+		right: calc(50% - 110px);
+		width: 220px;
+		padding: 5px 12px;
+		font-size: 1.5em;
+	}
+	
+	#stefan, #muehle-2 {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.eyecatcher {
+		font-size: 0.9em;
+		height: 110px;
+		width: 110px;
+		padding: 30px 10px;
+		top: -80px;
+		right: -30px;
+	}
+	
+	#muehle-1 {
+		margin-right: -30px;
+	}
+	
+	h1 { font-size: 3em; }
+	#home hr { height: 3px; }
+	#anmeldung .header { margin-left: 2%; }
+	
+	.swiper .swiper-slide span {
+		font-size: 1.3em;
+	}
+	
+	.swiper-wrapper .bilder:before {
+		background: linear-gradient(165deg, rgb(74, 63, 51) 0%, rgba(0,0,0,0) 80%);
+	}
+}
